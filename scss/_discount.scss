@@ -1,0 +1,50 @@
+@import "variables";
+
+.discount-wrapper {
+  height: 7vh;
+  background: $green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $p;
+  h5 {
+    margin: 0;
+  }
+  span {
+    font-family: $h5;
+    color: red;
+  }
+}
+
+.carousel {
+  height: 200px;
+}
+.indicators {
+  display: none !important;
+}
+
+.schedule-label {
+  text-align: center;
+  background: $dark-blue;
+  padding: 5px 0;
+  color: white;
+}
+
+.phone, .online {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  color:black;
+}
+
+
+.phone {
+  height: 7vh;
+  background: $pink;
+}
+
+.online {
+  height: 7vh;
+  background: $cream;
+}
