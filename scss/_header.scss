@@ -1,5 +1,9 @@
 @import "variables";
 
+header {
+  position: relative;
+}
+
 .nav-wrapper {
   background: $yellow;
 }
@@ -18,4 +22,12 @@
     font-family: $h3;
     color: $text-dark;
   }
+}
+
+.hamburger {
+  height: 100%;
+  position: absolute;
+  top: -7px;
+  right: 5px;
+  background: transparent !important;
 }
