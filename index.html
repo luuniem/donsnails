@@ -49,20 +49,70 @@
    <div class="schedule-wrapper">
      <div class="schedule-label">SCHEDULE APPOINTMENT BELOW</div>
      <div class="row">
-       <a href="tel: 360-882-8997"><div class="col s6 phone waves-effect waves-light"><i class="material-icons">phone</i></div></a>
-       <a href="#modal1"><div class="col s6 online"><i class="material-icons">web</div> </a>  <!-- Modal Trigger -->
+       <a href="tel: 360-882-8997" class="col s6 phone waves-effect waves-light"><img src="images/phone-call.png" alt="phone icon"></a>
+       <a href="#modal1" class="col s6 online"><img src="images/calendar.png" alt="calendar icon"></a>  <!-- Modal Trigger -->
      </div>
    </div>
 
    <!-- Modal Structure -->
    <div id="modal1" class="modal">
      <div class="modal-content">
-       <h4>Modal Header</h4>
-       <p>A bunch of text</p>
+       <h5>Schedule Online</h5>
+        <div class="row">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s12">
+                <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+                <label for="first_name">First Name</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="last_name" type="text" class="validate">
+                <label for="last_name">Last Name</label>
+              </div>
+            </div>
+            <!-- <div class="row">
+              <div class="input-field col s12">
+                <input id="phone" type="tel" class="validate">
+                <label for="phone">Phone</label>
+              </div>
+            </div> -->
+              <div class="row">
+                <div class="input-field col s12">
+                  <input type="date" class="datepicker">
+                  <label for="phone">Pick a Date</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s6">
+                  <input id="input_text" type="text" data-length="10">
+                  <label for="input_text">Enter a time</label>
+                </div>
+                <p>
+                 <input class="with-gap" name="group3" type="radio" id="test5" checked />
+                 <label for="test5">AM</label>
+                 </p>
+                 <p>
+                  <input class="with-gap" name="group3" type="radio" id="test6"  />
+                  <label for="test6">PM</label>
+                  </p>
+              </div>
+<br>
+                  <div class="row">
+                    <div class="input-field col s12" style="display: flex; justify-content:center;">
+
+                      <a type="submit" class="waves-effect waves-light btn sched-submit">SCHEDULE</a>
+                    </div>
+
+
+                  </div>
+          </form>
+        </div>
      </div>
-     <div class="modal-footer">
-       <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-     </div>
+     <!-- <div class="modal-footer">
+       <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+     </div> -->
    </div>
 
     <script src="js/jquery-3.1.1.js" ></script>

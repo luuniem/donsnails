@@ -6832,4 +6832,20 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   height: 7vh;
   background: #E8EDDF; }
 
+#modal1 {
+  height: 100vh;
+  margin: 0;
+  width: 100%; }
+  #modal1 .row {
+    margin: 0; }
+  #modal1 h5 {
+    text-align: center; }
+
+.modal-content {
+  padding: 0 !important; }
+
+.sched-submit {
+  color: #4B4E6D;
+  background: #4B4E6D !important; }
+
 /*# sourceMappingURL=styles.css.map */

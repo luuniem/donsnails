@@ -48,3 +48,25 @@
   height: 7vh;
   background: $cream;
 }
+
+#modal1 {
+  height: 100vh;
+  margin: 0;
+  width: 100%;
+  .row {
+    margin: 0;
+  }
+  h5 {
+    text-align: center;
+  }
+
+}
+
+.modal-content {
+  padding: 0!important;
+}
+
+.sched-submit {
+  color: $dark-blue;
+  background: $dark-blue!important;
+}
