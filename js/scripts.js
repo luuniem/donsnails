@@ -9,13 +9,23 @@ $(function(){
       selectMonths: true, // Creates a dropdown to control month
       selectYears: 15 // Creates a dropdown of 15 years to control year
     });
+    $(".hamburger").sideNav();
+    $(".hamburger").click(function(){
+      $(this).addClass('is-active');
+    });
+    $('#sidenav, .drag-target').click(function(){
+      $('.hamburger').removeClass('is-active');
+    });
 });
 
-var hamburger = document.querySelector(".hamburger");
 
-hamburger.addEventListener('click', function(){
-hamburger.classList.toggle('is-active');
-});
+
+// var hamburger = document.querySelector(".hamburger");
+//
+// hamburger.addEventListener('click', function(){
+// hamburger.classList.toggle('is-active');
+//
+// });
 
 var topSlider = new Swiper ('.swiper-container', {
   effect: 'coverflow',
