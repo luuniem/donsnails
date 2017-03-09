@@ -7998,7 +7998,7 @@ button.swiper-pagination-bullet {
   justify-content: space-around; }
 
 .services-wrapper {
-  height: 15vh;
+  height: 25vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -8011,8 +8011,12 @@ button.swiper-pagination-bullet {
     border-radius: 5px;
     color: white; }
   .services-wrapper .service-menu {
-    background: rgba(255, 209, 155, 0.6); }
+    background: rgba(255, 209, 155, 0.7);
+    color: #4B4E6D; }
   .services-wrapper .voesh-special {
-    background: rgba(80, 227, 194, 0.6); }
+    background: rgba(80, 227, 194, 0.7); }
+
+body {
+  background: rgba(255, 209, 155, 0.25); }
 
 /*# sourceMappingURL=styles.css.map */
