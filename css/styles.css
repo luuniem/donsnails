@@ -6778,6 +6778,9 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 header {
   position: relative; }
 
+.schedule-header {
+  text-align: center; }
+
 .nav-wrapper {
   background: #FFD173; }
 
@@ -7970,5 +7973,29 @@ button.swiper-pagination-bullet {
 
 .right-pag {
   margin: 2vh; }
+
+.social-media {
+  text-align: center;
+  color: #4B4E6D;
+  padding: 2px;
+  margin: 0 5px;
+  border-radius: 5px;
+  border: 1px solid #4B4E6D; }
+
+.social-media-icons {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-around; }
+  .social-media-icons a {
+    width: 50px;
+    height: 50px;
+    background: black;
+    transition: all .25s; }
+  .social-media-icons a:hover {
+    transform: translateY(-10px); }
+
+.chit-chat {
+  display: flex;
+  justify-content: space-around; }
 
 /*# sourceMappingURL=styles.css.map */
