@@ -7997,4 +7997,21 @@ button.swiper-pagination-bullet {
   display: flex;
   justify-content: space-around; }
 
+.services-wrapper {
+  height: 15vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-size: cover !important;
+  background-position: center !important;
+  margin-bottom: 10px; }
+  .services-wrapper div {
+    background-blend-mode: overlay;
+    padding: 20px;
+    border-radius: 5px; }
+  .services-wrapper .service-menu {
+    background: rgba(255, 209, 155, 0.6); }
+  .services-wrapper .voesh-special {
+    background: rgba(80, 227, 194, 0.6); }
+
 /*# sourceMappingURL=styles.css.map */
