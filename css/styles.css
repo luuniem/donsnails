@@ -8005,10 +8005,11 @@ button.swiper-pagination-bullet {
   background-size: cover !important;
   background-position: center !important;
   margin-bottom: 10px; }
-  .services-wrapper div {
+  .services-wrapper a {
     background-blend-mode: overlay;
     padding: 20px;
-    border-radius: 5px; }
+    border-radius: 5px;
+    color: white; }
   .services-wrapper .service-menu {
     background: rgba(255, 209, 155, 0.6); }
   .services-wrapper .voesh-special {
