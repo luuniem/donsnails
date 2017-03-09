@@ -8002,7 +8002,7 @@ button.swiper-pagination-bullet {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: url("jars.jpg");
+  background: url("images/jars.jpg");
   background-size: cover !important;
   background-position: center !important;
   margin-bottom: 10px; }
