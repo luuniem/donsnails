@@ -1,0 +1,47 @@
+@import "variables";
+
+.logo-wrap {
+    height: 10vh;
+  img {
+    width: 100%;
+  }
+}
+
+.voesh-head {
+  text-align: center;
+}
+
+.voesh-numbers {
+  h1 {
+    font-size: 5em;
+    text-align: center;
+    color: grey;
+  }
+  p {
+    text-align: center;
+  }
+}
+
+.voesh-vegan {
+  h5, p {
+    text-align: center;
+    margin: 0;
+  }
+}
+
+.voesh-tiny-icons {
+  div {
+    background: rgba(1,1,1,.1);
+    border: 1px solid rgba(0,0,0,.25);
+  }
+  img {
+    width: 100%;
+  }
+}
+
+.voesh-milk {
+  height: 15vh;
+  img {
+    width: 100%;
+  }
+}
