@@ -8046,6 +8046,9 @@ button.swiper-pagination-bullet {
   .services-wrapper .voesh-special {
     background: rgba(80, 227, 194, 0.7); }
 
+.side-nav .subheader {
+  line-height: 20px !important; }
+
 body {
   background: rgba(255, 209, 155, 0.25); }
 
