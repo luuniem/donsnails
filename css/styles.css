@@ -8057,6 +8057,20 @@ button.swiper-pagination-bullet {
 .voesh-head {
   text-align: center; }
 
+.voesh-numbers h1 {
+  font-size: 5em;
+  text-align: center;
+  color: grey; }
+.voesh-numbers p {
+  text-align: center; }
+
+.voesh-vegan h5, .voesh-vegan p {
+  text-align: center;
+  margin: 0; }
+
+.voesh-tiny-icons img {
+  width: 100%; }
+
 body {
   background: rgba(255, 209, 155, 0.25); }
 
