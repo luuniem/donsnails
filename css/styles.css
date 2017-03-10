@@ -8049,6 +8049,14 @@ button.swiper-pagination-bullet {
 .side-nav .subheader {
   line-height: 20px !important; }
 
+.logo-wrap {
+  height: 10vh; }
+  .logo-wrap img {
+    width: 100%; }
+
+.voesh-head {
+  text-align: center; }
+
 body {
   background: rgba(255, 209, 155, 0.25); }
 
