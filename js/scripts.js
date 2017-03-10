@@ -16,16 +16,10 @@ $(function(){
     $('#sidenav, .drag-target').click(function(){
       $('.hamburger').removeClass('is-active');
     });
+    $('.collapsible').collapsible();
 });
 
 
-
-// var hamburger = document.querySelector(".hamburger");
-//
-// hamburger.addEventListener('click', function(){
-// hamburger.classList.toggle('is-active');
-//
-// });
 
 var topSlider = new Swiper ('.swiper-container', {
   effect: 'coverflow',
