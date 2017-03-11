@@ -17,25 +17,19 @@ $(function(){
       $('.hamburger').removeClass('is-active');
     });
     $('.collapsible').collapsible();
+    $('select').material_select();
 });
 
 
 
 var topSlider = new Swiper ('.swiper-container', {
-  effect: 'coverflow',
+  effect: 'slide',
   autoplay: 5000,
   // pagination: '.swiper-pagination',
   speed: 800,
   loop: true,
   parallax:true,
-  autoplayDisableOnInteraction: false,
-  coverflow: {
-  rotate: 50,
-  stretch: 0,
-  depth: 100,
-  modifier: 1,
-  slideShadows : true
-}
+  autoplayDisableOnInteraction: false
 });
 
 $(function(){
