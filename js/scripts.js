@@ -23,17 +23,37 @@ $(function(){
 
 var topSlider = new Swiper ('.swiper-container', {
   effect: 'coverflow',
+  autoplay: 5000,
+  // pagination: '.swiper-pagination',
+  speed: 800,
+  loop: true,
+  parallax:true,
+  autoplayDisableOnInteraction: false,
   coverflow: {
   rotate: 50,
   stretch: 0,
   depth: 100,
   modifier: 1,
   slideShadows : true
-},
-  pagination: '.swiper-pagination'
+}
 });
 
-var album1 = new Swiper('.swiper-album1', {
-  effect: 'flip',
-  pagination: '.swiper-pagination'
+$(function(){
+  $(window).scroll(function(){
+    if($(this).scrollTop() > 1){
+      $('nav').addClass('sticky');
+    } else {
+      $('nav').removeClass('sticky');
+    }
+  });
+  $(window).scroll(function(){
+    if($(this).scrollTop() > 10){
+      $('header img').addClass('header-transform');
+    } else {
+      $('header img').removeClass('header-transform');
+    }
+  });
 });
+
+$('.appointment').parallax({imageSrc: 'images/background.jpg'});
+$('.service-parallax').parallax({imageSrc: 'images/jars.jpg'});

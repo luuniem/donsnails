@@ -34,43 +34,52 @@
            <div class="row">
              <form class="col s12">
                <div class="row">
-                 <div class="input-field col s4">
+                 <div class="input-field col s6">
                    <input  id="first_name" type="text" class="validate" required="true">
                    <label for="first_name">First Name</label>
                  </div>
-                 <div class="input-field col s4">
+                 <div class="input-field col s6">
                    <input id="last_name" type="text" class="validate">
                    <label for="last_name">Last Name</label>
-                 </div>
-                 <div class="input-field col s4">
-                   <input id="guests" type="number">
-                   <label for="input_text"># of Guests</label>
-                 </div>
-               </div>
-               <div class="row">
-                 <div class="input-field col s12">
-                   <input type="date" class="datepicker">
-                   <label for="phone">Pick a Date</label>
                  </div>
                </div>
                <div class="row">
                  <div class="input-field col s6">
-                   <input id="input_text" type="number" data-length="10" required>
-                   <label for="input_text">Enter a time</label>
+                   <input type="date" class="datepicker">
+                   <label for="phone">Pick a Date</label>
+                 </div>
+                 <div class="input-field col s6">
+                   <input id="guests" type="text">
+                   <label for="guests"># of Guests</label>
+                 </div>
+               </div>
+               <div class="row">
+                  <div class="input-field col s6">
+                    <textarea id="typeOfService" class="materialize-textarea" style="padding-bottom: 5px;"></textarea>
+                    <label for="typeOfService">Type of Service</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <a class="waves-effect waves-light btn" href="#modal1">see Menu</a>
+                  </div>
+                </div>
+               <div class="row">
+                 <div class="input-field col s6">
+                   <input id="times" type="text" required>
+                   <label for="time">Enter a time</label>
                  </div>
                  <p>
-                   <input class="with-gap" name="group3" type="radio" id="test5" checked />
-                   <label for="test5">AM</label>
+                   <input class="with-gap" name="am" type="radio" id="am" checked />
+                   <label for="am">AM</label>
                  </p>
                  <p>
-                   <input class="with-gap" name="group3" type="radio" id="test6"  />
-                   <label for="test6">PM</label>
+                   <input class="with-gap" name="pm" type="radio" id="pm"  />
+                   <label for="pm">PM</label>
                  </p>
                </div>
                <br>
-               <div class="row">
-                 <div class="input-field col s12" style="display: flex; justify-content:center;">
-                   <a type="submit" class="waves-effect waves-light btn sched-submit">SCHEDULE</a>
+               <div class="row" style="margin-top: 0;">
+                 <div class="input-field col s12" style="display: flex; justify-content:center;margin-top: 0;">
+                   <a type="submit" class="waves-effect waves-light btn sched-submit black-text">SCHEDULE</a>
                  </div>
                </div>
              </form>
@@ -86,9 +95,11 @@
                  <!-- <a href="#!name"><span class="white-text name">John Doe</span></a> -->
                  <a href="mailto:sammy9207@gmail.com"><span class="white-text email">sammy9207@gmail.com</span></a>
                </div></li>
-               <li><a href="about.html">ABOUT US</a></li>
+               <li><a href="about.html">MEET THE TEAM</a></li>
                <li><a href="services.html">SERVICES</a></li>
                <li><a href="voesh.html">VOESH SPECIALS</a></li>
+               <li><a href="promotions.html">PROMOTIONS</a></li>
+               <li><a href="gallery.html">GALLERY</a></li>
                <li><div class="divider"></div></li>
                <li><a href="#!">CAMAS CHIT CHAT</a></li>
                <div class="chit-chat">
@@ -97,15 +108,118 @@
                <a style="background: url('images/instagram-logo.svg'); background-repeat: no-repeat; background-size:contain;" class="yelp-icon" href="#"></a>
                </div>
                <li><div class="divider"></div></li>
-               <li><a class="waves-effect" href="tel: 360-335-1108">CALL FOR APPOINTMENT</a></li>
+               <li><a class="waves-effect waves-light red lighten-2" href="tel: 360-335-1108">CALL FOR APPOINTMENT</a></li>
                <li><a class="waves-effect" href="schedule.html">SCHEDULE ONLINE</a></li>
                <li><div class="divider"></div></li>
-               <li><a href="#!">HOURS</a></li>
-               <li><a class="subheader">Mon-Fri: 10AM - 7PM</a></li>
-               <li><a class="subheader">Saturday: 10AM - 6PM</a></li>
-               <li><a class="subheader">Sunday: 11AM - 5PM</a></li>
+
              </ul>
            <!-- SLIDEOUT NAV END -->
+
+
+           <!-- Modal Trigger -->
+
+              <!-- Modal Structure -->
+              <div id="modal1" class="modal bottom-sheet">
+                <div class="modal-content">
+                  <ul class="collapsible" data-collapsible="accordion">
+                     <li>
+                       <h5>Spa Pedicures</h5>
+                       <div class="collapsible-header waves-effect waves-light btn blue darken-1">The Classic $25</div>
+                       <div class="collapsible-body"><span>Traditional spa pedicure: whirlpool foot softening soak, nail shaping, cuticle treatment, basic light exfoliation with sugar scrub, warm lotion, hot stone, and 6 minutes massage.</span></div>
+                     </li>
+                     <li>
+                       <div class="collapsible-header waves-effect waves-light btn blue darken-1">Deluxe Spa $35</div>
+                       <div class="collapsible-body"><span>The classic spa pedicure PLUS scented sugar scrub callus remover, warm lotion, paraffin treatment, clay mask, hot stones and 10 minutes massage,and hot towels.</span></div>
+                     </li>
+                     <li>
+                       <div class="collapsible-header waves-effect waves-light btn black-text teal accent-3">VOESH Specials $30-$50</div>
+                       <div class="collapsible-body"><span>This is the ultimate pedicure treatment! Other than the cost of the service, everything is free! In other words, it’s PARABEN FREE, GLUTEN FREE, and best of all CRUELTY FREE!
+              Detoxify and deodorize with natural sea salt soak and exfoliate dead skin with our sweet sugar scrub. Buff away harden skin with callus remover and close up pores with mud masque. You’ll experience an amazing massage with our special massage cream that hydrates and soothes deep tissues of your skin. After applying our finishing moisturizer, you’ll leave our salon feeling super fresh.</span><a href="voesh.html" class="waves-effect btn">MORE INFO</a></div>
+                     </li>
+
+                      <li>
+                        <h5>Manicures</h5>
+                        <div class="collapsible-header waves-effect waves-light btn pink lighten-2">The Classic $15</div>
+                        <div class="collapsible-body"><span>Traditional manicure: cuticle soak, nails cut and shaped, cuticle treatment, light exfoliation, light massage, and polish.</span></div>
+                      </li>
+                      <li>
+                        <div class="collapsible-header waves-effect waves-light btn pink lighten-2">Deluxe Manicure $25</div>
+                        <div class="collapsible-body"><span>The Classic manicure PLUS hand exfoliation with paraffin treament.</span></div>
+                      </li>
+                      <li>
+                        <div class="collapsible-header waves-effect waves-light btn pink lighten-2">Gel Manicure $25</div>
+                        <div class="collapsible-body"><span>The Classic manicure with Gel Polish.</span></div>
+                      </li>
+                      <li>
+                        <h5>Youth Services (under 12)</h5>
+                        <div class="collapsible-header waves-effect waves-light btn orange lighten-2">Manicure + Pedicure $25</div>
+                        <div class="collapsible-header waves-effect waves-light btn orange lighten-2">Hand Polish $5</div>
+                        <div class="collapsible-header waves-effect waves-light btn orange lighten-2">Toe Polish $7</div>
+                      </li>
+                      <li>
+                        <h5>Nail Enhancements</h5>
+                        <div class="collapsible-header waves-effect waves-light btn brown lighten-1">Solar Powder $30</div>
+                        <div class="collapsible-header waves-effect waves-light btn brown lighten-1">French Tips $35</div>
+                        <div class="collapsible-header waves-effect waves-light btn brown lighten-1">Full Set with Gel Color $40</div>
+                        <div class="collapsible-header waves-effect waves-light btn brown lighten-1">Pink & White $45</div>
+                      </li>
+                      <li>
+                        <h5>Fill</h5>
+                        <div class="collapsible-header waves-effect waves-light btn teal darken-1">Solar Powder $20</div>
+                        <div class="collapsible-header waves-effect waves-light btn teal darken-1">Fill Gel $30</div>
+                        <div class="collapsible-header waves-effect waves-light btn teal darken-1">Pink & White $40</div>
+                      </li>
+                      <li>
+                        <h5>Additional Services</h5>
+                        <div class="collapsible-header waves-effect waves-light btn pink lighten-2">Open for additionals</div>
+                          <div class="collapsible-body">
+                            <span>
+                            <ul>
+                              <li>Enhanced nails removal..........$10</li>
+                              <li>Nail repair.................................$3</li>
+                              <li>Gel Polish removal...................$5</li>
+                              <li>French/Color tips.....................$5</li>
+                              <li>Designs.....................................$5+</li>
+                              <li>Polish change (hands).............$7</li>
+                              <li>Polish change (toes)................$10</li>
+                              <li>Extra Massage..........................$1/min</li>
+                            </ul>
+                            </span>
+                          </div>
+                      </li>
+                    </ul>
+                    <!-- SLIDEOUT NAV -->
+                    <ul id="slide-out" class="side-nav" style="z-index:999999;">
+                        <li><div class="userView">
+                          <div class="background">
+                            <img src="images/3.jpg">
+                          </div>
+                          <!-- <a href="#!user"><img class="circle" src="images/yuna.jpg"></a> -->
+                          <!-- <a href="#!name"><span class="white-text name">John Doe</span></a> -->
+                          <a href="mailto:sammy9207@gmail.com"><span class="white-text email">sammy9207@gmail.com</span></a>
+                        </div></li>
+                        <li><a href="about.html">MEET THE TEAM</a></li>
+                        <li><a href="services.html">SERVICES</a></li>
+                        <li><a href="voesh.html">VOESH SPECIALS</a></li>
+                        <li><a href="promotions.html">PROMOTIONS</a></li>
+                        <li><a href="gallery.html">GALLERY</a></li>
+                        <li><div class="divider"></div></li>
+                        <li><a href="#!">CAMAS CHIT CHAT</a></li>
+                        <div class="chit-chat">
+                        <a style="background: url('images/facebook-logo.svg'); background-repeat: no-repeat; background-size:contain;" class="facebook-icon" href="https://www.facebook.com/Dons-Nails-1884932678458208"></a>
+                        <a style="background: url('images/yelp-logo.svg'); background-repeat: no-repeat; background-size:contain;" class="instagram-icon" href="#"></a>
+                        <a style="background: url('images/instagram-logo.svg'); background-repeat: no-repeat; background-size:contain;" class="yelp-icon" href="#"></a>
+                        </div>
+                        <li><div class="divider"></div></li>
+                        <li><a class="waves-effect waves-light red lighten-2" href="tel: 360-335-1108">CALL FOR APPOINTMENT</a></li>
+                        <li><a class="waves-effect" href="schedule.html">SCHEDULE ONLINE</a></li>
+                        <li><div class="divider"></div></li>
+                      </ul>
+                </div>
+                <div class="modal-footer">
+                  <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+                </div>
+              </div>
 
       <script src="js/jquery-3.1.1.js" ></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>

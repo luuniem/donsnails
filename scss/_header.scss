@@ -1,7 +1,11 @@
 @import "variables";
 
 header {
-  position: relative;
+  position: fixed;
+  z-index: 1000;
+}
+nav {
+  position: fixed;
 }
 
 .schedule-header {
@@ -34,4 +38,13 @@ header {
   top: -7px;
   right: 5px;
   background: transparent !important;
+}
+
+
+header img {
+  transition: all .3s;
+}
+.header-transform {
+  transform: rotate(35deg)translateY(-10px)translateX(-10px);
+  // transition: all .25s;
 }

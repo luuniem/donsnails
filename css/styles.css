@@ -6776,7 +6776,11 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   .picker--time .picker__box {
     margin-bottom: 5em; } }
 header {
-  position: relative; }
+  position: fixed;
+  z-index: 1000; }
+
+nav {
+  position: fixed; }
 
 .schedule-header {
   text-align: center; }
@@ -6804,6 +6808,12 @@ header {
   right: 5px;
   background: transparent !important; }
 
+header img {
+  transition: all .3s; }
+
+.header-transform {
+  transform: rotate(35deg) translateY(-10px) translateX(-10px); }
+
 .discount-wrapper {
   height: 7vh;
   background: #A5E164;
@@ -6822,12 +6832,6 @@ header {
 
 .indicators {
   display: none !important; }
-
-.schedule-label {
-  text-align: center;
-  background: #4B4E6D;
-  padding: 5px 0;
-  color: white; }
 
 .phone, .online {
   display: flex;
@@ -7948,6 +7952,9 @@ button.swiper-pagination-bullet {
 @keyframes swiper-preloader-spin {
   100% {
     transform: rotate(360deg); } }
+.filler {
+  height: 8vh; }
+
 .topSlider {
   display: flex;
   justify-content: space-around;
@@ -7959,12 +7966,8 @@ button.swiper-pagination-bullet {
   transition: all .25s; }
 
 .topSlideShow {
-  width: 100%;
   height: 30vh; }
 
-@media screen and (min-width: 600px) {
-  .topSlideShow {
-    height: 55vh; } }
 .swiper-slide {
   background-repeat: no-repeat !important;
   background-size: cover !important;
@@ -7973,6 +7976,50 @@ button.swiper-pagination-bullet {
 .right-pag {
   margin: 2vh; }
 
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  background: #000; }
+
+.swiper-slide {
+  font-size: 18px;
+  color: #fff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 40px 60px;
+  background: rgba(0, 0, 0, 0.4);
+  height: 100%; }
+
+.parallax-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 130%;
+  height: 100%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center; }
+
+.swiper-slide .title {
+  font-size: 36px;
+  font-weight: 300;
+  font-family: "Lobster"; }
+
+.swiper-slide .subtitle {
+  font-size: 21px;
+  font-family: "Raleway"; }
+
+.swiper-slide .text {
+  font-size: 14px;
+  max-width: 400px;
+  line-height: 1.3; }
+
+@media screen and (max-width: 400px) {
+  .topSlideShow {
+    height: 35vh; } }
+@media screen and (min-width: 600px) {
+  .topSlideShow {
+    height: 30vh; } }
 .social-media {
   text-align: center;
   color: #4B4E6D;
@@ -8008,7 +8055,7 @@ button.swiper-pagination-bullet {
   background-size: cover; }
 
 .collapsible {
-  padding: 0 30px 50px 30px !important; }
+  padding: 50px 30px 50px 30px !important; }
 
 .service-wrap {
   display: flex;
@@ -8032,7 +8079,6 @@ button.swiper-pagination-bullet {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-image: url("../images/jars.jpg");
   background-size: cover !important;
   background-position: center !important;
   margin-bottom: 10px; }
@@ -8050,6 +8096,8 @@ button.swiper-pagination-bullet {
   line-height: 20px !important; }
 
 .logo-wrap {
+  padding-top: 60px;
+  margin-top: 20px;
   height: 10vh; }
   .logo-wrap img {
     width: 100%; }
@@ -8083,6 +8131,10 @@ button.swiper-pagination-bullet {
   font-size: 1.25em; }
 
 body {
-  background: rgba(255, 209, 155, 0.25); }
+  background: rgba(255, 209, 155, 0.25);
+  position: relative; }
+
+p {
+  font-family: 'Raleway',sans-serif; }
 
 /*# sourceMappingURL=styles.css.map */
