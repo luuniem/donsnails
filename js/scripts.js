@@ -18,6 +18,7 @@ $(function(){
     });
     $('.collapsible').collapsible();
     $('select').material_select();
+    $('.gallery div').addClass('z-depth-3');
 });
 
 
