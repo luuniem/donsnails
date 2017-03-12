@@ -1,0 +1,12 @@
+@import "variables";
+
+.gallery {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+  div {
+    width: 45vw;
+    height: 20vh;
+    background-size: cover!important;
+  }
+}
