@@ -18,8 +18,6 @@
   height: 30vh;
 }
 
-
-
 .swiper-slide {
   background-repeat: no-repeat !important;
   background-size: cover !important;
@@ -27,15 +25,9 @@
 }
 
 
-
-
 .right-pag {
   margin: 2vh;
 }
-
-
-
-
 
 .swiper-container {
     width: 100%;
@@ -50,7 +42,16 @@
     padding: 40px 60px;
     background: rgba(0,0,0, .4);
     height:100%;
+    padding: 5px;
+    padding-top: 20px;
 }
+
+@media screen and (min-height: 374px){
+  .swiper-slide {
+    padding: 20px;
+  }
+}
+
 .parallax-bg {
     position: absolute;
     left: 0;
