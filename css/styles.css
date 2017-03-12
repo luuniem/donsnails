@@ -6790,7 +6790,7 @@ nav {
 
 .brand-logo {
   position: relative;
-  width: 60vw !important;
+  width: 40vw !important;
   display: flex !important;
   align-items: center;
   z-index: 999; }
@@ -6822,7 +6822,26 @@ header img {
     nav .brand-logo h3 {
       font-size: 2em;
       bottom: 30px;
-      left: 130px; } }
+      left: 130px; }
+
+  .header-transform {
+    transform: rotate(35deg) translateY(-20px) translateX(-10px) scale(0.9); } }
+@media only screen and (min-width: 993px) {
+  header {
+    height: 10vh !important; }
+    header nav {
+      height: 10vh !important; }
+      header nav .brand-logo h3 {
+        top: -22px; }
+    header #nav-mobile {
+      font-family: "Raleway";
+      width: 60vw;
+      text-transform: uppercase; }
+      header #nav-mobile a {
+        color: black; }
+
+  .header-transform {
+    transform: rotate(35deg) translateY(-25px) translateX(-10px) scale(0.9); } }
 .discount-wrapper {
   height: 7vh;
   background: #A5E164;
@@ -8007,7 +8026,7 @@ button.swiper-pagination-bullet {
 
 @media screen and (min-height: 374px) {
   .swiper-slide {
-    padding: 25px; } }
+    padding: 50px; } }
 .parallax-bg {
   position: absolute;
   left: 0;
@@ -8037,8 +8056,7 @@ button.swiper-pagination-bullet {
 
 @media only screen and (min-width: 601px) {
   .topSlideShow {
-    height: 45vh;
-    margin-top: 25px; }
+    height: 45vh; }
 
   .swiper-slide .title {
     font-size: 2.5em; }
@@ -8132,7 +8150,7 @@ button.swiper-pagination-bullet {
       font-family: "Raleway"; }
 
   .collapsible {
-    padding: 90px 30px 50px 30px !important; } }
+    padding: 120px 30px 50px 30px !important; } }
 .logo-wrap {
   padding-top: 60px;
   margin-top: 20px;
@@ -8168,6 +8186,45 @@ button.swiper-pagination-bullet {
 .voesh-header-content {
   font-size: 1.25em; }
 
+@media only screen and (min-width: 601px) {
+  .logo-wrap {
+    padding: 50px;
+    padding-top: 130px; } }
+.voesh-milk, .voesh-head {
+  font-family: "Raleway"; }
+
+@media only screen and (min-width: 601px) {
+  .promo-label {
+    padding-top: 130px; }
+
+  .voesh-head .voesh-header-content {
+    font-size: 2em; }
+
+  .voesh-numbers h1 {
+    font-size: 8em; }
+  .voesh-numbers p {
+    font-size: 1.25em; }
+
+  .voesh-vegan h5 {
+    font-size: 2em; }
+  .voesh-vegan p {
+    font-size: 1.25em; }
+
+  .voesh-milk h6 {
+    font-size: 2em; }
+  .voesh-milk li {
+    font-size: 1.25em; } }
+.promo-label {
+  padding-top: 70px; }
+
+.gallery-label {
+  text-align: center;
+  padding-top: 60px;
+  font-family: "Lobster";
+  font-size: 2.5em;
+  font-weight: bold;
+  text-transform: capitalize; }
+
 .gallery {
   display: flex;
   justify-content: space-around;
@@ -8175,8 +8232,18 @@ button.swiper-pagination-bullet {
   .gallery div {
     width: 45vw;
     height: 20vh;
-    background-size: cover !important; }
+    background-size: cover !important;
+    background-position: bottom !important; }
 
+@media only screen and (min-width: 601px) {
+  .gallery-label {
+    padding-top: 130px; }
+
+  .gallery div {
+    height: 40vh; } }
+@media only screen and (min-width: 993px) {
+  .gallery div {
+    height: 60vh; } }
 body {
   background: rgba(255, 209, 155, 0.25);
   position: relative; }

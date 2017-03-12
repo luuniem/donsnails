@@ -51,3 +51,50 @@
 .voesh-header-content  {
   font-size: 1.25em;
 }
+
+@media #{$medium-and-up} {
+  .logo-wrap {
+    padding: 50px;
+    padding-top: 130px;
+  }
+ }
+
+
+ .voesh-milk, .voesh-head {
+   font-family: $p;
+ }
+
+ @media #{$medium-and-up} {
+   .promo-label {
+     padding-top: 130px;
+   }
+   .voesh-head {
+     .voesh-header-content {
+       font-size: 2em;
+     }
+   }
+   .voesh-numbers {
+     h1 {
+       font-size: 8em;
+     }
+     p {
+       font-size: 1.25em;
+     }
+   }
+   .voesh-vegan {
+     h5 {
+       font-size: 2em;
+     }
+     p {
+       font-size: 1.25em;
+     }
+   }
+   .voesh-milk {
+     h6 {
+       font-size: 2em;
+     }
+     li {
+       font-size: 1.25em;
+     }
+   }
+  }

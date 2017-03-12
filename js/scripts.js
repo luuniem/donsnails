@@ -34,13 +34,13 @@ var topSlider = new Swiper ('.swiper-container', {
 });
 
 $(function(){
-  $(window).scroll(function(){
-    if($(this).scrollTop() > 1){
-      $('nav').addClass('sticky');
-    } else {
-      $('nav').removeClass('sticky');
-    }
-  });
+  // $(window).scroll(function(){
+  //   if($(this).scrollTop() > 1){
+  //     $('nav').addClass('sticky');
+  //   } else {
+  //     $('nav').removeClass('sticky');
+  //   }
+  // });
   $(window).scroll(function(){
     if($(this).scrollTop() > 10){
       $('header img').addClass('header-transform');

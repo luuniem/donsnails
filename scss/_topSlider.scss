@@ -47,7 +47,7 @@
 
 @media screen and (min-height: 374px){
   .swiper-slide {
-    padding: 25px;
+    padding: 50px;
   }
 }
 
@@ -83,7 +83,6 @@
 @media #{$medium-and-up} {
   .topSlideShow {
     height: 45vh;
-    margin-top: 25px;
   }
   .swiper-slide {
     .title {

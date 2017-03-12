@@ -22,7 +22,7 @@ nav {
 
 .brand-logo {
   position: relative;
-  width: 60vw!important;
+  width: 40vw!important;
   display: flex !important;
   align-items: center;
   z-index: 999;
@@ -67,4 +67,35 @@ header img {
          }
        }
   }
+  .header-transform {
+    transform: rotate(35deg)translateY(-20px)translateX(-10px)scale(.9);
+    // transition: all .25s;
+  }
+}
+
+@media #{$large-and-up} {
+  header {
+      height: 10vh!important;
+      nav {
+        height: 10vh!important;
+        .brand-logo{
+          h3{
+            top: -22px;
+          }
+        }
+      }
+      #nav-mobile {
+        font-family: $p;
+        width: 60vw;
+        text-transform: uppercase;
+        a {
+          color: black;
+        }
+      }
+  }
+  .header-transform {
+    transform: rotate(35deg)translateY(-25px)translateX(-10px)scale(.9);
+    // transition: all .25s;
+  }
+
 }
