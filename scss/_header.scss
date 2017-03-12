@@ -4,9 +4,13 @@ header {
   position: fixed;
   z-index: 1000;
 }
+
+
 nav {
   position: fixed;
 }
+
+
 
 .schedule-header {
   text-align: center;
@@ -47,4 +51,20 @@ header img {
 .header-transform {
   transform: rotate(35deg)translateY(-10px)translateX(-10px);
   // transition: all .25s;
+}
+
+@media #{$medium-and-up} {
+  nav {
+       height: 12vh!important;
+       .brand-logo {
+         img {
+           width: 130px;
+         }
+         h3 {
+           font-size: 2em;
+           bottom: 30px;
+           left: 130px;
+         }
+       }
+  }
 }

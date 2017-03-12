@@ -1,5 +1,11 @@
 @import "variables";
 
+@media #{$medium-and-up} {
+  iframe {
+    height: 40vh;
+  }
+}
+
 .social-media {
   text-align: center;
   color: $dark-blue;

@@ -42,6 +42,19 @@
   height: 7vh;
   background: $cream;
 }
+@media #{$medium-and-up} {
+  .appointment {
+    .phone, .online {
+      height: 10vh!important;
+    }
+    p {
+      font-size: 1.5em;
+    }
+    li {
+      font-size: 1.2em;
+    }
+  }
+ }
 
 #modal1 {
   height: 100vh;
