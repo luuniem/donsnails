@@ -20,10 +20,10 @@
             <h3>Nails</h3>
           </a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="sass.html">Team</a></li>
+            <li><a href="#team">Team</a></li>
             <li><a href="badges.html">Services</li>
             <li><a href="promotions.html">PROMOTIONS</a></li>
-            <li><a href="#!">Feedback</a></li>
+            <li><a href="#feedback">Feedback</a></li>
             <li><a href="gallery.html">GALLERY</a></li>
             <li><a class="waves-effect waves-light" href="tel: 360-335-1108">Call Us</a></li>
           </ul>
@@ -35,8 +35,8 @@
       </nav>
     </header>
 
-    <!-- SLIDESHOW -->
-    <div class="topSlideShow swiper-container z-depth-3">
+    <!-- SLIDESHOW MEDIUM AND DOWN-->
+    <div  class="topSlideShow swiper-container z-depth-3 hide-on-large-only">
       <div class="parallax-bg" style="background: url('images/2.jpg'); background-position:left; background-size:cover;"  data-swiper-parallax="-23%"></div>
       <div class="swiper-wrapper">
         <div class="swiper-slide">
@@ -45,7 +45,7 @@
           <!-- Parallax subtitle -->
           <div class="subtitle" data-swiper-parallax="-200" data-swiper-parallax-duration="900">We Are Here to Stay!</div>
           <!-- And parallax text with custom transition duration -->
-          <div class="text" data-swiper-parallax="-300" data-swiper-parallax-duration="1000">
+          <div id="team" class="text" data-swiper-parallax="-300" data-swiper-parallax-duration="1000">
             <p>We are now under new management and would like to welcome everyone! Drop by and say hello!</p>
         </div>
       </div>
@@ -74,8 +74,73 @@
       <div class="top-pag right-pag swiper-pagination"></div>
     </div>
     <!-- SLIDESHOW END -->
+
+    <!-- SLIDESHOW LARGE -->
+    <!-- Slider main container -->
+    <div class="swiper-container topSlideShow hide-on-medium-and-down">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide" style="background: url(images/2.jpg);">
+
+              <div class="title" data-swiper-parallax="-100" data-swiper-parallax-duration="800" >Hello Camas!</div>
+
+              <div class="subtitle" data-swiper-parallax="-200" data-swiper-parallax-duration="900">We Are Here to Stay!</div>
+
+              <div id="team" class="text" data-swiper-parallax="-300" data-swiper-parallax-duration="1000">
+
+                <p>We are now under new management and would like to welcome everyone! Drop by and say hello!</p>
+
+            </div>
+          </div>
+            <div class="swiper-slide" style="background: url(images/1.jpg);">
+              <div class="title" data-swiper-parallax="-100" data-swiper-parallax-duration="800" >Hello Camas!</div>
+
+              <div class="subtitle" data-swiper-parallax="-200" data-swiper-parallax-duration="900">We Are Here to Stay!</div>
+
+              <div  class="text" data-swiper-parallax="-300" data-swiper-parallax-duration="1000">
+
+                <p>We are now under new management and would like to welcome everyone! Drop by and say hello!</p>
+
+            </div>
+            </div>
+            <div class="swiper-slide" style="background: url(images/3.jpg);">
+
+                <!-- Each slide has parallax title -->
+                <div class="title" data-swiper-parallax="-100" data-swiper-parallax-duration="800">Y-Not Camas?</div>
+                <!-- Parallax subtitle -->
+                <div class="subtitle" data-swiper-parallax="-200" data-swiper-parallax-duration="900">There's a Reason to Stay!</div>
+                <!-- And parallax text with custom transition duration -->
+                <div id="team"class="text" data-swiper-parallax="-300" data-swiper-parallax-duration="1000">
+                  <p>We treat our customers with the utmost respect and provide the highest quality service!</p>
+                </div>
+              </div>
+
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+    <!-- SLIDESHOW LARGE END -->
+
+    <!-- MEET THE TEAM -->
+    <h3 class="about-title hide-on-med-and-down">Meet the team</h3>
+    <div class="about-us-wrapper hide-on-med-and-down" data-parallax="scroll" data-image-src="images/background.jpg">
+      <div class="about-left-col">
+
+      </div>
+      <div class="about-right-col">
+        <p>Sammy is the new young owner of Don's Nails here in Camas. She speciallizes in all services including but not limited to Gel, Acryllic, Facials, and Waxing! She enjoys outdoor activities such as hiking and camping. Sammy is also an advid gamer who likes to spend her extra free time on Xbox Live to take down terrorists in Call of Duty!</p>
+      </div>
+    </div>
 <!-- APPOINTMENT SECTION -->
-<div class="parallax-window appointment" data-parallax="scroll" data-image-src="images/background.jpg">
+<div class="parallax-window appointment" id="appointment" data-parallax="scroll" data-image-src="images/background.jpg">
   <div class="row z-depth-3"style="margin: 0;">
     <p class="schedule-label" style="margin: 0; padding-top: 4vh; text-align: center;">SCHEDULE BELOW</p>
     <a href="tel: 360-335-1108" class="col s6 m6 phone waves-effect waves-light"><img src="images/phone-call.png" alt="phone icon"></a>
@@ -114,7 +179,7 @@
 
 
 <!-- SOCIAL MEDIA -->
-   <div class="social-media-icons ">
+   <div id="feedback" class="social-media-icons ">
      <a style="background: url('images/facebook-logo.svg');" class="facebook-icon" href="https://www.facebook.com/Dons-Nails-1884932678458208"></a>
      <a style="background: url('images/yelp-logo.svg');" class="yelp-icon" href="#"></a>
      <a style="background: url('images/google.svg');" class="google-icon" href="https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=don's+nails+camas&*&lrd=0x5495bc52f47b948d:0x90b43b6aeefcf365,1,"></a>
@@ -154,7 +219,7 @@
   </ul>
 <!-- SLIDEOUT NAV END -->
     <script src="js/jquery-3.1.1.js" ></script>
-    <script src="js/smooth.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.js"></script>
     <script src="js/parallax.min.js"></script>
     <script src="js/classie.js"></script>

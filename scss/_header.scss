@@ -79,8 +79,11 @@ header img {
       nav {
         height: 10vh!important;
         .brand-logo{
+          width: 25vw;
+          padding-left: 60px;
           h3{
             top: -22px;
+            padding-left: 60px;
           }
         }
       }
@@ -97,5 +100,4 @@ header img {
     transform: rotate(35deg)translateY(-25px)translateX(-10px)scale(.9);
     // transition: all .25s;
   }
-
 }

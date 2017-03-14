@@ -95,5 +95,9 @@
       font-size: 1em;
     }
   }
-
+}
+@media #{$large-and-up} {
+  .topSlideShow {
+    height: 90vh;
+  }
 }
