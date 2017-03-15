@@ -2,39 +2,24 @@
 
 
 .appointment {
-  height: 15vh;
-  padding: 0 0 20vh 0;
+  // height: 15vh;
+  padding: 0 0 5vh 0;
 }
 
 .appointment-large {
   font-family: $p;
   height: 60vh!important;
-  // padding-top: 20vh;
   display: flex;
-  .call-and-schedule {
-    width: 50vw;
-    display: flex;
+  justify-content: space-around;
+  .appointment-left {
+    width:40vw;
+    display:flex;
     flex-direction: column;
-    .call {
-      height: 50vh;
-      margin: 2.5vh 10vw;
-      background: rgba(255,255,255, .5);
-    }
-    .schedule {
-      height: 50vh;
-      background: rgba(255,255,255, .5);
-      margin: 2.5vh 10vw;
-
-    }
-  }
-  h4 {
-    margin: 2.5vh 0;
-    margin-right: 10vw;
-    text-align: center;
-    width: 50vw!important;
-    background: blue;
-    line-height: 1.25em;
-    display: flex;
     align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .appointment-right {
+    width: 60vw;
   }
 }

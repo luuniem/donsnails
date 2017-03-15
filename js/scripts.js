@@ -78,3 +78,19 @@ $(function(){
     }
   });
 });
+
+// var showthumb = getElementsByClassName('team-thumbnail');
+// showthumb.addEventListner('click', active);
+// function active(){
+//
+// }
+
+$(function(){
+    $(".team-thumbnail li img").hover(function(){
+      $(this).find(".about-left-col").fadeIn();
+    }
+                    ,function(){
+                        $(this).find(".about-left-col").fadeOut();
+                    }
+                   );
+});
