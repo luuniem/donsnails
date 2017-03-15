@@ -6847,14 +6847,6 @@ header img {
   .header-transform {
     transform: rotate(35deg) translateY(-25px) translateX(-10px) scale(0.9); } }
 .about-title {
-  background: #fceabb;
-  background: -moz-linear-gradient(left, #fceabb 0%, rgba(252, 205, 77, 0.92) 37%, rgba(252, 205, 77, 0.9) 47%, rgba(248, 181, 0, 0.89) 51%, rgba(251, 223, 147, 0.79) 100%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, #fceabb), color-stop(37%, rgba(252, 205, 77, 0.92)), color-stop(47%, rgba(252, 205, 77, 0.9)), color-stop(51%, rgba(248, 181, 0, 0.89)), color-stop(100%, rgba(251, 223, 147, 0.79)));
-  background: -webkit-linear-gradient(left, #fceabb 0%, rgba(252, 205, 77, 0.92) 37%, rgba(252, 205, 77, 0.9) 47%, rgba(248, 181, 0, 0.89) 51%, rgba(251, 223, 147, 0.79) 100%);
-  background: -o-linear-gradient(left, #fceabb 0%, rgba(252, 205, 77, 0.92) 37%, rgba(252, 205, 77, 0.9) 47%, rgba(248, 181, 0, 0.89) 51%, rgba(251, 223, 147, 0.79) 100%);
-  background: -ms-linear-gradient(left, #fceabb 0%, rgba(252, 205, 77, 0.92) 37%, rgba(252, 205, 77, 0.9) 47%, rgba(248, 181, 0, 0.89) 51%, rgba(251, 223, 147, 0.79) 100%);
-  background: linear-gradient(to right, #fceabb 0%, rgba(252, 205, 77, 0.92) 37%, rgba(252, 205, 77, 0.9) 47%, rgba(248, 181, 0, 0.89) 51%, rgba(251, 223, 147, 0.79) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', endColorstr='#fbdf93', GradientType=1 );
   margin: 0;
   padding: 5vh;
   font-family: "Raleway";
