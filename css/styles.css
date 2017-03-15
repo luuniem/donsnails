@@ -6863,18 +6863,20 @@ header img {
   display: none; }
 
 .about-us-wrapper {
-  height: 40vh;
+  height: 35vh;
   transition: all .25s;
-  display: flex; }
+  display: flex;
+  justify-content: space-around; }
 
 .about-left-col {
-  width: 40vw;
+  width: 25vw;
   position: relative; }
 
 .about-right-col {
   width: 60vw;
   position: relative;
-  display: none; }
+  display: none;
+  height: 100%; }
   .about-right-col p {
     padding: 70px; }
 
@@ -10499,6 +10501,36 @@ button.swiper-pagination-bullet {
 .slideOutUp {
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp; }
+
+.appointment {
+  height: 15vh;
+  padding: 0 0 20vh 0; }
+
+.appointment-large {
+  font-family: "Raleway";
+  height: 60vh !important;
+  display: flex; }
+  .appointment-large .call-and-schedule {
+    width: 50vw;
+    display: flex;
+    flex-direction: column; }
+    .appointment-large .call-and-schedule .call {
+      height: 50vh;
+      margin: 2.5vh 10vw;
+      background: rgba(255, 255, 255, 0.5); }
+    .appointment-large .call-and-schedule .schedule {
+      height: 50vh;
+      background: rgba(255, 255, 255, 0.5);
+      margin: 2.5vh 10vw; }
+  .appointment-large h4 {
+    margin: 2.5vh 0;
+    margin-right: 10vw;
+    text-align: center;
+    width: 50vw !important;
+    background: blue;
+    line-height: 1.25em;
+    display: flex;
+    align-items: center; }
 
 body {
   background: rgba(255, 209, 155, 0.25);

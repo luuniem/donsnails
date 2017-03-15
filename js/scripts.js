@@ -1,5 +1,7 @@
 $(function(){
   $('.appointment, .about-us-wrapper').parallax({imageSrc: 'images/background.jpg'});
+  $('.appointment-parallax').parallax({imageSrc: 'images/notebook.jpg'});
+
   $('.service-parallax').parallax({imageSrc: 'images/jars.jpg'});
   $(".button-collapse").sideNav();
    $('.carousel.carousel-slider').carousel({fullWidth: true});

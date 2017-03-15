@@ -18,13 +18,14 @@
 }
 
 .about-us-wrapper {
-  height: 40vh;
+  height: 35vh;
   transition: all .25s;
   display: flex;
+  justify-content: space-around;
 }
 
 .about-left-col {
-  width:40vw;
+  width:25vw;
   position: relative;
 }
 
@@ -32,6 +33,7 @@
   width: 60vw;
   position: relative;
   display:none;
+  height: 100%;
   p{
     padding: 70px;
   }
