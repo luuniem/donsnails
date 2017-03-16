@@ -8,7 +8,7 @@
 
 .appointment-large {
   font-family: $p;
-  height: 60vh!important;
+  height: 100vh;
   display: flex;
   justify-content: space-around;
   .appointment-left {
@@ -18,8 +18,14 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    background: rgba(0,0,0,.4);
+    color: white;
   }
   .appointment-right {
     width: 60vw;
+    background: rgba(255,255,255,.65);
+    h3 {
+      text-align: center;
+    }
   }
 }

@@ -12,15 +12,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body style="background: url('images/background.jpg')">
-    <header class="navbar-fixed">
+    <header class="navbar-fixed" id="home">
       <nav class="z-depth-2">
         <div class="nav-wrapper #ffe082 amber lighten-3">
-          <a href="index.html" class="left brand-logo">
+          <a href="#home" class="left brand-logo">
             <img src="images/logo.svg" alt="">
             <h3>Nails</h3>
           </a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a href="#team">Team</a></li>
+            <li><a href="#schedule">Schedule</a></li>
             <li><a href="badges.html">Services</li>
             <li><a href="promotions.html">PROMOTIONS</a></li>
             <li><a href="#feedback">Feedback</a></li>
@@ -136,7 +137,7 @@
       <p>Salutations! We are the new owners and managers here in Camas. With over 20 years of experience combined, we provide the highest quality services in the area. Every member on our team is licensed, and we practice all sanitation standards so that you can have a relaxing experience with peace of mind. </p>
       <div class="about-columns">
         <div class="about-left-col">
-
+          <div class="show"></div>
         </div>
         <div  class="about-right-col">
           <div class="sammy">
@@ -174,17 +175,66 @@
 </div>
 
 <!-- APPOINTMENT LARGE -->
-<div   class="hide-on-med-and-down appointment-large  parallax-window appointment-parallax" data-parallax="scroll" data-image-src="images/notebook.jpg">
+<div id="schedule"  class="hide-on-med-and-down appointment-large  parallax-window appointment-parallax" data-parallax="scroll" data-image-src="images/notebook.jpg">
   <div class="appointment-left">
     <h3 class="about-title schedule-title hide-on-med-and-down">Schedule appoinment</h3>
-      <h4>In order for us to better prepare and provide the highest quality, we suggest calling or scheduling an appointment online.</h4>
+      <h4>In order for us to ensure you with the highest quality services, we suggest calling or scheduling an appointment online ahead of time.</h4>
   </div>
   <div class="appointment-right">
-    <div class="call-and-schedule">
-      <div class="call">CALL TODAY</div>
-      <div class="schedule"></div>
-    </div>
+    <h3>Schedule Online</h3>
+    <div class="row">
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s6">
+            <input  id="first_name" type="text" class="validate" required="true">
+            <label for="first_name">First Name</label>
+          </div>
+          <div class="input-field col s6">
+            <input id="last_name" type="text" class="validate">
+            <label for="last_name">Last Name</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s6">
+            <input type="date" class="datepicker">
+            <label for="phone">Pick a Date</label>
+          </div>
+          <div class="input-field col s6">
+            <input id="guests" type="text">
+            <label for="guests"># of Guests</label>
+          </div>
+        </div>
+        <div class="row">
+           <div class="input-field col s6">
+             <textarea id="typeOfService" class="materialize-textarea" style="padding-bottom: 5px;"></textarea>
+             <label for="typeOfService">Type of Service</label>
+           </div>
+           <div class="input-field col s6">
+             <a class="waves-effect waves-light btn" href="#modal1">see Menu</a>
+           </div>
+         </div>
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="times" type="number" required>
+            <label for="time">Enter a time</label>
+          </div>
+          <div class="input-field col s6">
+             <select>
+               <option value="AM">AM</option>
+               <option value="PM">PM</option>
+             </select>
+             <label>Choose your destiny</label>
+           </div>
+        </div>
+        <br>
+        <div class="row" style="margin-top: 0;">
+          <div class="input-field col s12" style="display: flex; justify-content:center;margin-top: 0;">
+            <a type="submit" class="waves-effect waves-light btn sched-submit black-text">SCHEDULE</a>
+          </div>
+        </div>
+      </form>
   </div>
+</div>
 </div>
 <!-- APPOINTMENT LARGE END -->
 

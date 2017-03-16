@@ -6910,6 +6910,10 @@ header img {
         left: 0;
         top: 0; }
 
+.show {
+  width: 100%;
+  height: 100%; }
+
 .discount-wrapper {
   height: 7vh;
   background: #A5E164;
@@ -10534,7 +10538,7 @@ button.swiper-pagination-bullet {
 
 .appointment-large {
   font-family: "Raleway";
-  height: 60vh !important;
+  height: 100vh;
   display: flex;
   justify-content: space-around; }
   .appointment-large .appointment-left {
@@ -10543,9 +10547,14 @@ button.swiper-pagination-bullet {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center; }
+    text-align: center;
+    background: rgba(0, 0, 0, 0.4);
+    color: white; }
   .appointment-large .appointment-right {
-    width: 60vw; }
+    width: 60vw;
+    background: rgba(255, 255, 255, 0.65); }
+    .appointment-large .appointment-right h3 {
+      text-align: center; }
 
 body {
   background: rgba(255, 209, 155, 0.25);

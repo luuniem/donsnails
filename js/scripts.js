@@ -87,10 +87,10 @@ $(function(){
 
 $(function(){
     $(".team-thumbnail li img").hover(function(){
-      $(this).find(".about-left-col").fadeIn();
+      $(".team-thumbnail li img").find(".show").fadeIn();
     }
                     ,function(){
-                        $(this).find(".about-left-col").fadeOut();
+                        $(this).find(".show").fadeOut();
                     }
                    );
 });
