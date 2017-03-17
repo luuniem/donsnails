@@ -115,6 +115,17 @@
                   <p>We treat our customers with the utmost respect and provide the highest quality service!</p>
                 </div>
               </div>
+              <div class="swiper-slide" style="background: url(images/gallery/IMG_1261.jpg);">
+
+                  <!-- Each slide has parallax title -->
+                  <div class="title" data-swiper-parallax="-100" data-swiper-parallax-duration="800">Y-Not Camas?</div>
+                  <!-- Parallax subtitle -->
+                  <div class="subtitle" data-swiper-parallax="-200" data-swiper-parallax-duration="900">There's a Reason to Stay!</div>
+                  <!-- And parallax text with custom transition duration -->
+                  <div class="text" data-swiper-parallax="-300" data-swiper-parallax-duration="1000">
+                    <p>We treat our customers with the utmost respect and provide the highest quality service!</p>
+                  </div>
+                </div>
 
         </div>
         <!-- If we need pagination -->
@@ -184,7 +195,7 @@
         <h4>360-335-1108</h4>
       </div>
   </div>
-  <div class="appointment-right"><br><br>
+  <div class="appointment-right"><br><br><br>
     <h3>Schedule Online</h3>
     <div class="row">
       <form class="col s12">
@@ -250,33 +261,37 @@
 <!-- APPOINTMENT LARGE END -->
 
 <!-- SERVICE LARGE -->
-<div class="row service-large" id="service"style="margin-top: 0;">
-  <br><br>
+<div class="row service-large hide-on-med-and-down" id="service"style="margin-top: 0;">
+  <br><br><br>
   <h3 class="about-title">Services</h3>
   <div class="row service-lg-inner">
-    <div class="flowers-left flowers"></div>
+    <div class="flowers-left flowers">
+      <div class="flower-inner-left">
+        <div class="flower-inner-left-2"></div>
+      </div>
+    </div>
     <div class="service-lg-menu">
-      <div class="service-items">
+      <div class="service-items ">
         <div>
-          <h5>Spa Pedicures</h5>
+          <h5 class="z-depth-2">Spa Pedicures</h5>
           <ul>
-            <li>The Classic <span>$25</span></li>
-            <li>Deluxe Spa <span>$35</span></li>
+            <li id="p-classic">The Classic <span>$25</span></li>
+            <li id="p-deluxe">Deluxe Spa <span>$35</span></li>
           </ul>
         </div>
         <br>
         <div>
-          <h5>Manicures</h5>
+          <h5 class="z-depth-2">Manicures</h5>
           <ul>
-            <li>The Classic <span>$15</span></li>
-            <li>Deluxe Manicure <span>$25</span></li>
-            <li>Gel Manicure <span>$25</span></li>
+            <li id="m-classic">The Classic <span>$15</span></li>
+            <li id="m-deluxe">Deluxe Manicure <span>$25</span></li>
+            <li id="m-gel">Gel Manicure <span>$25</span></li>
           </ul>
         </div>
       </div>
-      <div class="service-items">
+      <div class="service-items ">
         <div>
-          <h5>Nail Enhancements</h5>
+          <h5 class="z-depth-2">Nail Enhancements</h5>
           <ul>
             <li>Solar Powder <span>$30</span></li>
             <li>French Tips <span>$35</span></li>
@@ -285,7 +300,7 @@
           </ul>
         </div>
         <div>
-          <h5>Fill</h5>
+          <h5 class="z-depth-2">Fill</h5>
           <ul>
             <li>Solar Powder <span>$20</span></li>
             <li>Fill Gel <span>$30</span></li>
@@ -293,8 +308,8 @@
           </ul>
         </div>
       </div>
-      <div class="service-items">
-        <h5>Additional Services</h5>
+      <div class="service-items ">
+        <h5 class="z-depth-2">Additional Services</h5>
         <ul>
           <li>Enhanced nails removal <span>$10</span></li>
           <li>Nail repair <span>$3</span></li>
@@ -306,8 +321,8 @@
           <li>Extra Massage <span>$1/min</span></li>
         </ul>
       </div>
-      <div class="service-items">
-        <h5>Youth Services (< 12)</h5>
+      <div class="service-items ">
+        <h5 class="z-depth-2">Youth Services (< 12)</h5>
         <ul>
           <li>Mani + Pedi <span>$25</span></li>
           <li>Hand Polish <span>$5</span></li>
@@ -315,7 +330,15 @@
         </ul>
       </div>
     </div>
-    <div class="flowers-right flowers"></div>
+    <div class="flowers-right flowers">
+      <div class="service-description z-depth-1">
+              <div class="p-classic">Traditional spa pedicure: whirlpool foot softening soak, nail shaping, cuticle treatment, basic light exfoliation with sugar scrub, warm lotion, hot stone, and 6 minutes massage.</div>
+              <div class="p-deluxe">The classic spa pedicure PLUS scented sugar scrub callus remover, warm lotion, paraffin treatment, clay mask, hot stones and 10 minutes massage,and hot towels.</div>
+              <div class="m-classic">Traditional manicure: cuticle soak, nails cut and shaped, cuticle treatment, light exfoliation, light massage, and polish.</div>
+              <div class="m-deluxe">The Classic manicure PLUS hand exfoliation with paraffin treament.</div>
+              <div class="m-gel">The Classic manicure with Gel Polish.</div>
+      </div>
+    </div>
 
   </div>
 </div>

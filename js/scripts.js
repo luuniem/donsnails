@@ -94,3 +94,21 @@ $(function(){
                     }
                    );
 });
+
+$(function(){
+  $('#p-classic').hover(function(){
+    $('.p-classic').toggle();
+  });
+  $('#p-deluxe').hover(function(){
+    $('.p-deluxe').toggle();
+  })
+  $('#m-classic').hover(function(){
+    $('.m-classic').toggle();
+  })
+  $('#m-deluxe').hover(function(){
+    $('.m-deluxe').toggle();
+  })
+  $('#m-gel').hover(function(){
+    $('.m-gel').toggle();
+  })
+});

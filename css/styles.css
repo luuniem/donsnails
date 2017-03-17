@@ -8238,11 +8238,12 @@ button.swiper-pagination-bullet {
     background: rgba(0, 0, 0, 0.6);
     display: flex;
     flex-direction: column;
-    justify-content: space-between; }
+    justify-content: space-between;
+    transition: width 2s; }
 
 .flowers {
-  height: 25vh;
-  width: 20vw;
+  height: 40vh;
+  width: 90vw;
   background: url("../images/flowers.png");
   background-size: contain;
   background-repeat: no-repeat; }
@@ -8250,22 +8251,86 @@ button.swiper-pagination-bullet {
 .service-lg-menu {
   height: 50vh;
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+  font-family: "Raleway"; }
   .service-lg-menu h5 {
-    background: rgba(255, 255, 255, 0.4); }
+    background: rgba(255, 255, 255, 0.4);
+    text-align: center; }
   .service-lg-menu span {
     float: right; }
 
 .flowers-left {
   align-self: flex-start;
-  transform: rotateX(180deg); }
+  transform: rotateX(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 .flowers-right {
   align-self: flex-end;
-  transform: rotateY(180deg); }
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center; }
+  .flowers-right div {
+    text-align: center; }
+
+.flower-inner-left {
+  display: flex;
+  align-items: center;
+  width: 0;
+  height: 10vh;
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.44));
+  background: -o-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.44));
+  background: -moz-linear-gradient(right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.44));
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.44));
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  transition: all 0.5s cubic-bezier(0.81, -0.02, 0.32, 0.79); }
+
+.service-lg-inner:hover .flower-inner-left {
+  width: 90vw;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0; }
+
+.service-description {
+  transition: all 0.5s cubic-bezier(0.81, -0.02, 0.32, 0.79); }
+  .service-description div {
+    display: none; }
+
+.service-lg-inner:hover .service-description {
+  margin-top: 5vh;
+  height: 15vh;
+  width: 50vw;
+  transform: rotateY(180deg);
+  float: right;
+  display: flex;
+  background: rgba(255, 255, 255, 0.8); }
+  .service-lg-inner:hover .service-description div {
+    align-self: center;
+    font-size: 18px;
+    color: #4B4E6D; }
+
+.flower-inner-left-2 {
+  width: 86vw;
+  height: 2vh;
+  background: -webkit-linear-gradient(left, rgba(255, 142, 178, 0), rgba(255, 142, 178, 0.55));
+  background: -o-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 142, 178, 0.55));
+  background: -moz-linear-gradient(right, rgba(255, 255, 255, 0), rgba(255, 142, 178, 0.55));
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 142, 178, 0.55)); }
 
 .service-items {
+  width: 20vw;
   color: white; }
+
+.service-lg-inner li {
+  background: rgba(255, 255, 255, 0);
+  transition: all 0.25s cubic-bezier(0.81, -0.02, 0.32, 0.79); }
+
+.service-lg-inner li:hover {
+  background: -webkit-linear-gradient(left, rgba(255, 142, 178, 0), rgba(255, 142, 178, 0.55));
+  background: -o-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 142, 178, 0.55));
+  background: -moz-linear-gradient(right, rgba(255, 255, 255, 0), rgba(255, 142, 178, 0.55));
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 142, 178, 0.55)); }
 
 .logo-wrap {
   padding-top: 60px;
