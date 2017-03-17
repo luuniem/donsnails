@@ -8303,12 +8303,11 @@ button.swiper-pagination-bullet {
   width: 50vw;
   transform: rotateY(180deg);
   float: right;
-  display: flex;
-  background: rgba(255, 255, 255, 0.8); }
+  display: flex; }
   .service-lg-inner:hover .service-description div {
     align-self: center;
     font-size: 18px;
-    color: #4B4E6D; }
+    color: white; }
 
 .flower-inner-left-2 {
   width: 86vw;
@@ -8316,7 +8315,9 @@ button.swiper-pagination-bullet {
   background: -webkit-linear-gradient(left, rgba(255, 142, 178, 0), rgba(255, 142, 178, 0.55));
   background: -o-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 142, 178, 0.55));
   background: -moz-linear-gradient(right, rgba(255, 255, 255, 0), rgba(255, 142, 178, 0.55));
-  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 142, 178, 0.55)); }
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 142, 178, 0.55));
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px; }
 
 .service-items {
   width: 20vw;

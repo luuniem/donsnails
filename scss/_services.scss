@@ -177,11 +177,12 @@
   float: right;
   display: flex;
   // border: 3px solid  rgba(255,142,178,.55);
-  background: rgba(255,255,255, .8);
+  // background: rgba(255,255,255, .8);
   div {
     align-self: center;
     font-size: 18px;
-    color: $dark-blue;
+    // color: $dark-blue;
+    color: white;
   }
 }
 
@@ -192,8 +193,8 @@
   background: -o-linear-gradient(left, rgba(255,255,255, 0), rgba(255,142,178,.55));
   background: -moz-linear-gradient(right, rgba(255,255,255, 0), rgba(255,142,178,.55));
   background: linear-gradient(to right, rgba(255,255,255, 0), rgba(255,142,178,.55));
-  // border-top-right-radius: 50px;
-  // border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
 }
 
 
