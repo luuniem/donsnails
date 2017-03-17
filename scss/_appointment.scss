@@ -19,13 +19,23 @@
     justify-content: center;
     text-align: center;
     background: rgba(0,0,0,.4);
-    color: white;
+    color: $dark-blue;
+    h3,h5 {
+      color: white;
+    }
   }
   .appointment-right {
     width: 60vw;
     background: rgba(255,255,255,.65);
     h3 {
       text-align: center;
+      color: $dark-blue;
     }
   }
+}
+
+.schedule-call {
+  padding: 20px 60px;
+  background: rgba(255,255,255,.6);
+  border-radius: 5px;
 }

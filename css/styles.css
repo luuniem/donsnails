@@ -8226,6 +8226,47 @@ button.swiper-pagination-bullet {
 
   .collapsible {
     padding: 120px 30px 50px 30px !important; } }
+.service-large {
+  height: 100vh; }
+  .service-large .about-title {
+    text-align: center; }
+  .service-large .service-lg-inner {
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    height: 80vh;
+    width: 90vw;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+
+.flowers {
+  height: 25vh;
+  width: 20vw;
+  background: url("../images/flowers.png");
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.service-lg-menu {
+  height: 50vh;
+  display: flex;
+  justify-content: space-around; }
+  .service-lg-menu h5 {
+    background: rgba(255, 255, 255, 0.4); }
+  .service-lg-menu span {
+    float: right; }
+
+.flowers-left {
+  align-self: flex-start;
+  transform: rotateX(180deg); }
+
+.flowers-right {
+  align-self: flex-end;
+  transform: rotateY(180deg); }
+
+.service-items {
+  color: white; }
+
 .logo-wrap {
   padding-top: 60px;
   margin-top: 20px;
@@ -10549,12 +10590,20 @@ button.swiper-pagination-bullet {
     justify-content: center;
     text-align: center;
     background: rgba(0, 0, 0, 0.4);
-    color: white; }
+    color: #4B4E6D; }
+    .appointment-large .appointment-left h3, .appointment-large .appointment-left h5 {
+      color: white; }
   .appointment-large .appointment-right {
     width: 60vw;
     background: rgba(255, 255, 255, 0.65); }
     .appointment-large .appointment-right h3 {
-      text-align: center; }
+      text-align: center;
+      color: #4B4E6D; }
+
+.schedule-call {
+  padding: 20px 60px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 5px; }
 
 body {
   background: rgba(255, 209, 155, 0.25);

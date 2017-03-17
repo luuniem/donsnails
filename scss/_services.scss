@@ -86,3 +86,53 @@
     padding: 120px 30px 50px 30px!important;
   }
 }
+
+.service-large {
+  .about-title {
+    text-align: center;
+  }
+  height: 100vh;
+  .service-lg-inner {
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    height:80vh;
+    width: 90vw;
+    background: rgba(0,0,0,.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.flowers {
+  height: 25vh;
+  width: 20vw;
+  background: url('../images/flowers.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.service-lg-menu {
+  height: 50vh;
+  display: flex;
+  justify-content: space-around;
+  h5 {
+    background: rgba(255,255,255, .4);
+  }
+  span {
+    float:right;
+  }
+}
+
+.flowers-left {
+  align-self: flex-start;
+  transform:rotateX(180deg);
+
+}
+.flowers-right {
+  align-self:flex-end;
+  transform:rotateY(180deg);
+}
+
+.service-items {
+  color: white;
+}
