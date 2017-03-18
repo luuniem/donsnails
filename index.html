@@ -11,7 +11,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
-  <body style="background: url('images/background.jpg')">
+  <body >
     <header class="navbar-fixed" id="home">
       <nav class="z-depth-2">
         <div class="nav-wrapper #ffe082 amber lighten-3">
@@ -77,23 +77,24 @@
 
     <!-- SLIDESHOW LARGE -->
     <!-- Slider main container -->
-    <div class="swiper-container topSlideShow hide-on-med-and-down">
+    <div class="swiper-container topSlideShow hide-on-med-and-down slide-large">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
             <!-- Slides -->
             <div class="swiper-slide" style="background: url(images/2.jpg);">
+              <div class="slide-contain">
+                <div class="title" data-swiper-parallax="-100" data-swiper-parallax-duration="800" >Hello Camas!</div>
 
-              <div class="title" data-swiper-parallax="-100" data-swiper-parallax-duration="800" >Hello Camas!</div>
+                <div class="subtitle" data-swiper-parallax="-200" data-swiper-parallax-duration="900">We Are Here to Stay!</div>
 
-              <div class="subtitle" data-swiper-parallax="-200" data-swiper-parallax-duration="900">We Are Here to Stay!</div>
+                <div class="text" data-swiper-parallax="-300" data-swiper-parallax-duration="1000">
 
-              <div class="text" data-swiper-parallax="-300" data-swiper-parallax-duration="1000">
-
-                <p>We are now under new management and would like to welcome everyone! Drop by and say hello!</p>
-
-            </div>
+                  <p>We are now under new management and would like to welcome everyone! Drop by and say hello!</p>
+                </div>
+              </div>
           </div>
             <div class="swiper-slide" style="background: url(images/1.jpg);">
+              <div class="slide-contain">
               <div class="title" data-swiper-parallax="-100" data-swiper-parallax-duration="800" >Hello Camas!</div>
 
               <div class="subtitle" data-swiper-parallax="-200" data-swiper-parallax-duration="900">We Are Here to Stay!</div>
@@ -101,11 +102,11 @@
               <div  class="text" data-swiper-parallax="-300" data-swiper-parallax-duration="1000">
 
                 <p>We are now under new management and would like to welcome everyone! Drop by and say hello!</p>
-
+              </div>
             </div>
-            </div>
+          </div>
             <div class="swiper-slide" style="background: url(images/3.jpg);">
-
+              <div class="slide-contain">
                 <!-- Each slide has parallax title -->
                 <div class="title" data-swiper-parallax="-100" data-swiper-parallax-duration="800">Y-Not Camas?</div>
                 <!-- Parallax subtitle -->
@@ -115,8 +116,9 @@
                   <p>We treat our customers with the utmost respect and provide the highest quality service!</p>
                 </div>
               </div>
+            </div>
               <div class="swiper-slide" style="background: url(images/gallery/IMG_1261.jpg);">
-
+              <div class="slide-contain">
                   <!-- Each slide has parallax title -->
                   <div class="title" data-swiper-parallax="-100" data-swiper-parallax-duration="800">Y-Not Camas?</div>
                   <!-- Parallax subtitle -->
@@ -126,7 +128,7 @@
                     <p>We treat our customers with the utmost respect and provide the highest quality service!</p>
                   </div>
                 </div>
-
+            </div>
         </div>
         <!-- If we need pagination -->
         <div class="swiper-pagination"></div>

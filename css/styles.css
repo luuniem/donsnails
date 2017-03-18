@@ -6846,6 +6846,26 @@ header img {
 
   .header-transform {
     transform: rotate(35deg) translateY(-25px) translateX(-10px) scale(0.9); } }
+.slide-large .swiper-wrapper {
+  position: relative; }
+  .slide-large .swiper-wrapper .slide-contain {
+    height: 60vh;
+    width: 100vw;
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, transparent 100%);
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, transparent 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, transparent 100%);
+    position: absolute;
+    left: 0;
+    top: 0; }
+    .slide-large .swiper-wrapper .slide-contain .title {
+      font-size: 4em; }
+    .slide-large .swiper-wrapper .slide-contain div {
+      padding-top: 2vh;
+      padding-left: 10vw;
+      width: 50vw; }
+    .slide-large .swiper-wrapper .slide-contain p {
+      width: 50vw; }
+
 .about-title {
   margin: 0;
   padding: 5vh;
@@ -10704,6 +10724,9 @@ footer {
 
 body {
   background: white !important;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, transparent 50%) !important;
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, transparent 50%) !important;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, transparent 50%) !important;
   position: relative; }
 
 p {
