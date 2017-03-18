@@ -61,6 +61,7 @@ $(function(){
   });
 });
 
+
 $(function(){
   $(window).scroll(function(){
     if($(this).scrollTop() >200){
@@ -112,3 +113,15 @@ $(function(){
     $('.m-gel').toggle();
   })
 });
+
+$(function(){
+  var $window = $(window);
+  var bodyContain = $('.body-contain');
+
+  $window.resize(function resize(){
+    if ($window.width() < 992) {
+      return bodyContain.removeClass('container')
+    }
+    bodyContain.addClass('container')
+  })
+})

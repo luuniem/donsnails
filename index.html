@@ -23,10 +23,10 @@
             <li><a href="#team">Team</a></li>
             <li><a href="#schedule">Schedule</a></li>
             <li><a href="#service">Services</li>
-            <li><a href="promotions.html">PROMOTIONS</a></li>
-            <li><a href="#feedback">Feedback</a></li>
+            <li><a href="#footer">Feedback</a></li>
             <li><a href="gallery.html">GALLERY</a></li>
-            <li><a class="waves-effect waves-light" href="tel: 360-335-1108">Call Us</a></li>
+            <li><a href="promotions.html">PROMOTIONS</a></li>
+            <li><a class="waves-effect waves-light" href="#footer">Contact us</a></li>
           </ul>
           <button  class="right hamburger hamburger--emphatic hide-on-large-only" type="button" data-activates="slide-out" >
             <span class="hamburger-box">
@@ -141,7 +141,7 @@
     </div>
     <div id="team"></div>
     <!-- SLIDESHOW LARGE END -->
-
+<div class="body-contain container">
     <!-- MEET THE TEAM -->
     <div class="about-us-wrapper hide-on-med-and-down">
       <h3 class="about-title hide-on-med-and-down">Meet the team</h3>
@@ -152,7 +152,7 @@
         </div>
         <div  class="about-right-col">
           <div class="sammy">
-            <p>Sammy is the new young owner of Don's Nails here in Camas. She speciallizes in all services including but not limited to Gel, Acryllic, Facials, and Waxing! She enjoys outdoor activities such as hiking and camping. Sammy is also an advid gamer who likes to spend her extra free time on Xbox Live to take down terrorists in Call of Duty!</p>
+            <p class="blurp-sammy blurp">Sammy is the new young owner of Don's Nails here in Camas. She speciallizes in all services including but not limited to Gel, Acryllic, Facials, and Waxing! She enjoys outdoor activities such as hiking and camping. Sammy is also an advid gamer who likes to spend her extra free time on Xbox Live to take down terrorists in Call of Duty!</p>
             <div class="sammy-thumbnail team-thumbnail">
               <ul>
                 <li class="z-depth-3"><img src="images/team/sammy1.png" alt=""></li>
@@ -163,7 +163,6 @@
               </ul>
             </div>
           </div>
-
         </div>
 
       </div>
@@ -197,39 +196,39 @@
   </div>
   <div class="appointment-right"><br><br><br>
     <h3>Schedule Online</h3>
-    <div class="row">
-      <form class="col s12">
+    <div class="row ">
+      <form action="https://formspree.io/luuniem87@gmail.com"class="col s12 large-form">
         <div class="row">
           <div class="input-field col s6">
-            <input  id="first_name" type="text" class="validate" required="true">
+            <input  name="first name" id="first_name" type="text" class="validate" required="true">
             <label for="first_name">First Name</label>
           </div>
           <div class="input-field col s6">
-            <input id="last_name" type="text" class="validate">
+            <input name="last name" id="last_name" type="text" class="validate">
             <label for="last_name">Last Name</label>
           </div>
         </div>
         <div class="row">
           <div class="input-field col s6">
-            <input type="date" class="datepicker">
-            <label for="phone">Pick a Date</label>
+            <input name="date"type="date" class="datepicker">
+            <label for="date">Pick a Date</label>
           </div>
           <div class="input-field col s6">
-            <input id="guests" type="text">
+            <input name="guests" id="guests" type="text">
             <label for="guests"># of Guests</label>
           </div>
         </div>
         <div class="row">
            <div class="input-field col s6">
-             <textarea id="typeOfService" class="materialize-textarea" style="padding-bottom: 5px;"></textarea>
+             <textarea name="service" id="typeOfService" class="materialize-textarea" style="padding-bottom: 5px;"></textarea>
              <label for="typeOfService">Type of Service</label>
            </div>
            <div class="input-field col s6">
-             <select>
-               <option value="Little Sammy">No preference</option>
-               <option value="Little Sammy">Little Sammy</option>
-               <option value="Steven">Steven</option>
-               <option value="Big Sam">Big Sam</option>
+             <select name="tech">
+               <option name="no preference"value="Little Sammy">No preference</option>
+               <option name="little sammy"value="Little Sammy">Little Sammy</option>
+               <option name="steven"value="Steven">Steven</option>
+               <option name="sam"value="Big Sam">Big Sam</option>
              </select>
              <label>Choose your tech</label>
              <!-- <a class="waves-effect waves-light btn" href="#modal1">see Menu</a> -->
@@ -237,13 +236,13 @@
          </div>
         <div class="row">
           <div class="input-field col s6">
-            <input id="times" type="number" required>
+            <input name="time"id="times" type="number" required>
             <label for="time">Enter a time</label>
           </div>
           <div class="input-field col s6">
-             <select>
-               <option value="AM">AM</option>
-               <option value="PM">PM</option>
+             <select name="am pm">
+               <option name="am"value="AM">AM</option>
+               <option name="pm"value="PM">PM</option>
              </select>
              <label>AM/PM</label>
            </div>
@@ -251,7 +250,7 @@
         <br>
         <div class="row" style="margin-top: 0;">
           <div class="input-field col s12" style="display: flex; justify-content:center;margin-top: 0;">
-            <a type="submit" class="waves-effect waves-light btn sched-submit black-text">SCHEDULE</a>
+            <button type="submit" class="waves-effect waves-light btn sched-submit black-text">SCHEDULE</button>
           </div>
         </div>
       </form>
@@ -261,7 +260,7 @@
 <!-- APPOINTMENT LARGE END -->
 
 <!-- SERVICE LARGE -->
-<div class="row service-large hide-on-med-and-down" id="service"style="margin-top: 0;">
+<div class="service-large hide-on-med-and-down" id="service"style="margin-top: 0;">
   <br><br><br>
   <h3 class="about-title">Services</h3>
   <div class="row service-lg-inner">
@@ -354,25 +353,40 @@
   </div>
 
    <!-- END SERVICES -->
-
+<h3 class="hours-label hide-on-med-and-down">Map & Hours</h3>
 <!-- MAP -->
-
-<div class="row container " style="margin-top: 20px;">
-  <h5 class="col s12" style="text-align:center;">VISIT US</h5>
-  <iframe class="col s12 z-depth-4" height="auto" frameborder="0" style="border: 2px solid black; padding: 0; border-radius: 10px;" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJWQ-g6FK8lVQRHgO8YyEDtgk&key=AIzaSyCYUKdS2oj6JnGpAZbnjIWkWTzbGl92080" allowfullscreen></iframe>
+<div class="map-hours hide-on-med-and-down">
+  <div class="map " style="margin-top: 20px;">
+    <!-- <h5 class="col s12" style="text-align:center;">VISIT US</h5> -->
+    <iframe class="col s12 m6 center-align z-depth-4" height="auto" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJWQ-g6FK8lVQRHgO8YyEDtgk&key=AIzaSyCYUKdS2oj6JnGpAZbnjIWkWTzbGl92080" allowfullscreen></iframe>
+  </div>
+  <div class="hours-wrap">
+    <div class="address-large">
+      <p style="font-weight: bold">Address</p>
+      <p>3252 NE 3rd Ave</p>
+      <p>Camas, WA 98607</p>
+    </div>
+    <div class="hours">
+      <p style="font-weight: bold">Hours</p>
+      <p>Monday - Friday: 10:00AM - 7:00PM</p>
+      <p>Saturday: 10:00AM - 6:00PM</p>
+      <p>Sunday: 11:00AM - 5:00PM</p>
+    </div>
+  </div>
 </div>
 <!-- END MAP -->
 
 
 
 <!-- SOCIAL MEDIA -->
-   <div id="feedback" class="social-media-icons ">
+
+   <div id="feedback" class="social-media-icons hide-on-large-only">
      <a style="background: url('images/facebook-logo.svg');" class="facebook-icon" href="https://www.facebook.com/Dons-Nails-1884932678458208"></a>
      <a style="background: url('images/yelp-logo.svg');" class="yelp-icon" href="#"></a>
      <a style="background: url('images/google.svg');" class="google-icon" href="https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=don's+nails+camas&*&lrd=0x5495bc52f47b948d:0x90b43b6aeefcf365,1,"></a>
      <a style="background: url('images/instagram-logo.svg');" class="instagram-icon" href="#"></a>
    </div>
-    <div class="social-media z-depth-2">
+    <div class="social-media z-depth-2 hide-on-large-only">
       <h6>CAMAS CHIT CHAT
     </div>
 
@@ -404,6 +418,18 @@
     <li><a class="waves-effect" href="schedule.html">SCHEDULE ONLINE</a></li>
     <li><div class="divider"></div></li>
   </ul>
+</div>
+  <footer id="footer"class="hide-on-med-and-down">
+    <div class="footer-wrap container">
+      <h4>Give us a feedback and follow us!</h4>
+      <div id="feedback" class="social-media-icons hide-on-med-and-down">
+        <a style="background: url('images/facebook-logo.svg');" class="facebook-icon" href="https://www.facebook.com/Dons-Nails-1884932678458208"></a>
+        <a style="background: url('images/yelp-logo.svg');" class="yelp-icon" href="#"></a>
+        <a style="background: url('images/google.svg');" class="google-icon" href="https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=don's+nails+camas&*&lrd=0x5495bc52f47b948d:0x90b43b6aeefcf365,1,"></a>
+        <a style="background: url('images/instagram-logo.svg');" class="instagram-icon" href="#"></a>
+      </div>
+    </div>
+  </footer>
 <!-- SLIDEOUT NAV END -->
     <script src="js/jquery-3.1.1.js" ></script>
 

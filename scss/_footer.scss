@@ -1,0 +1,34 @@
+
+
+footer {
+  height:25vh;
+  background: $yellow;
+  margin-top: 5vh;
+  display: flex;
+  align-items: center;
+  h4 {
+    margin-top: 2vh;
+    font-family: $p;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
+.map-hours {
+  display: flex;
+}
+
+.hours-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  margin-left: 5vw;
+}
+
+.hours-label {
+  margin-top: 2.5vh;
+  font-family: $p;
+  text-align: center;
+}

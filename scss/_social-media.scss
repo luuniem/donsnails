@@ -3,6 +3,10 @@
 @media #{$medium-and-up} {
   iframe {
     height: 40vh;
+    width: 40vw;;
+    display:block;
+    padding: 0;
+    border-radius: 10px;
   }
 }
 
