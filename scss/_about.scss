@@ -44,9 +44,6 @@
   height: 100%;
   background: rgba(255,255,255, .4);
   height: 65vh;
-  .sammy {
-    padding-top: 20vh;
-  }
   p{
     padding: 70px;
   }
@@ -56,23 +53,16 @@
   display: none;
 }
 
-.team-thumbnail {
-  ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    li {
-      height: 10vh;
-      width: 10vh;
-      img {
-        height:100%;
-        transition: all .25s;
-        position: relative
-      }
-      img:hover {
-        transform: scale(1.1);
-      }
-    }
+.thumbnail {
+  height: 10vh;
+  width: 10vw;
+  img {
+    height:100%;
+    transition: all .25s;
+    position: relative
+  }
+  img:hover {
+    transform: scale(1.1);
   }
 }
 
@@ -83,4 +73,9 @@
 
 .blurp {
   padding: 0 2vw !important;
+  width: 50vw;
+}
+
+.members {
+  display: flex;
 }
