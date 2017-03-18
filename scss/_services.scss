@@ -148,7 +148,7 @@
 }
 
 .service-lg-inner:hover .flower-inner-left {
-      width: 90vw;
+      width: 50vw;
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
 }
@@ -166,8 +166,6 @@
   transform:rotateY(180deg);
   float: right;
   display: flex;
-  // border: 3px solid  rgba(255,142,178,.55);
-  // background: rgba(255,255,255, .8);
   div {
     align-self: center;
     font-size: 18px;

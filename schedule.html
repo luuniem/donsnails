@@ -32,53 +32,60 @@
 <br><br><br>
           <h5 class="schedule-header">Schedule Online</h5>
            <div class="row">
-             <form class="col s12">
+             <form method="POST" action="https://formspree.io/luuniem87@gmail.com"class="col s12 large-form">
                <div class="row">
                  <div class="input-field col s6">
-                   <input  id="first_name" type="text" class="validate" required="true">
+                   <input  name="first name" id="first_name" type="text" class="validate" required="true">
                    <label for="first_name">First Name</label>
                  </div>
                  <div class="input-field col s6">
-                   <input id="last_name" type="text" class="validate">
+                   <input name="last name" id="last_name" type="text" class="validate">
                    <label for="last_name">Last Name</label>
                  </div>
                </div>
                <div class="row">
                  <div class="input-field col s6">
-                   <input type="date" class="datepicker">
-                   <label for="phone">Pick a Date</label>
+                   <input name="date"type="date" class="datepicker">
+                   <label for="date">Pick a Date</label>
                  </div>
                  <div class="input-field col s6">
-                   <input id="guests" type="text">
+                   <input name="guests" id="guests" type="text">
                    <label for="guests"># of Guests</label>
                  </div>
                </div>
                <div class="row">
                   <div class="input-field col s6">
-                    <textarea id="typeOfService" class="materialize-textarea" style="padding-bottom: 5px;"></textarea>
+                    <textarea name="service" id="typeOfService" class="materialize-textarea" style="padding-bottom: 5px;"></textarea>
                     <label for="typeOfService">Type of Service</label>
                   </div>
                   <div class="input-field col s6">
-                    <a class="waves-effect waves-light btn" href="#modal1">see Menu</a>
+                    <select name="tech">
+                      <option name="no preference"value="Little Sammy">No preference</option>
+                      <option name="little sammy"value="Little Sammy">Little Sammy</option>
+                      <option name="steven"value="Steven">Steven</option>
+                      <option name="sam"value="Big Sam">Big Sam</option>
+                    </select>
+                    <label>Choose your tech</label>
+                    <!-- <a class="waves-effect waves-light btn" href="#modal1">see Menu</a> -->
                   </div>
                 </div>
                <div class="row">
                  <div class="input-field col s6">
-                   <input id="times" type="number" required>
+                   <input name="time"id="times" type="number" required>
                    <label for="time">Enter a time</label>
                  </div>
                  <div class="input-field col s6">
-                    <select>
-                      <option value="AM">AM</option>
-                      <option value="PM">PM</option>
+                    <select name="am pm">
+                      <option name="am"value="AM">AM</option>
+                      <option name="pm"value="PM">PM</option>
                     </select>
-                    <label>Choose your destiny</label>
+                    <label>AM/PM</label>
                   </div>
                </div>
                <br>
                <div class="row" style="margin-top: 0;">
                  <div class="input-field col s12" style="display: flex; justify-content:center;margin-top: 0;">
-                   <a type="submit" class="waves-effect waves-light btn sched-submit black-text">SCHEDULE</a>
+                   <button type="submit" value="Send" class="waves-effect waves-light btn sched-submit black-text">SCHEDULE</button>
                  </div>
                </div>
              </form>

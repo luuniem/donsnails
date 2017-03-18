@@ -8288,7 +8288,7 @@ button.swiper-pagination-bullet {
   transition: all 0.5s cubic-bezier(0.81, -0.02, 0.32, 0.79); }
 
 .service-lg-inner:hover .flower-inner-left {
-  width: 90vw;
+  width: 50vw;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0; }
 
@@ -8426,7 +8426,8 @@ button.swiper-pagination-bullet {
     height: 40vh; } }
 @media only screen and (min-width: 993px) {
   .gallery div {
-    height: 60vh; } }
+    height: 60vh;
+    background-position: center !important; } }
 /*!
  * animate.css -http://daneden.me/animate
  * Version - 3.5.1
